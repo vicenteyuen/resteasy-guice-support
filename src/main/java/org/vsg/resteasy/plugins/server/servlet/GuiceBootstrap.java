@@ -171,7 +171,7 @@ public class GuiceBootstrap extends ResteasyBootstrap {
 	}
 
 	private Class<? extends Application>[] getApplications(ServletContext context) {
-		String applicationsStr = context.getInitParameter("cms.rs.Applications");
+		String applicationsStr = context.getInitParameter("org.vsg.rs.Applications");
 
 		if (applicationsStr != null) {
 			String[] appsStrings = applicationsStr.trim().split(",");
