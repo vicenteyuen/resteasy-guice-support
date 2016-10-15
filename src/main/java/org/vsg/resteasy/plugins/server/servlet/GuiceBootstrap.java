@@ -128,6 +128,7 @@ public class GuiceBootstrap extends ResteasyBootstrap {
 			try {
 				Constructor<? extends Application> constructor = appClz.getConstructor(Injector.class);
 
+
 				Application application = constructor.newInstance(injector);
 
 				// --- set deployment app ---

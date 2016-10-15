@@ -16,10 +16,6 @@ public abstract class AbstractGuiceInjectApplication extends Application {
 	private Injector injector;	
 	
 	
-	public AbstractGuiceInjectApplication() {
-		
-	}
-	
 	public AbstractGuiceInjectApplication(Injector injector) {
 		this.injector = injector;
 		
